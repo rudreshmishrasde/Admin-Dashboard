@@ -76,7 +76,7 @@ const Usertable: FC = (): JSX.Element => {
         }
         </div>
       </div>
-      <div className='w-full p-20' >
+      <div className='w-full p-2 lg:p-20' >
         {
           loader ? <div className='loader  '></div> : 
            <table className="border-collapse border border-slate-400 w-full">
