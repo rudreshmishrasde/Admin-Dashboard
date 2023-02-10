@@ -27,9 +27,9 @@ const Crud: FC = () => {
 
   ]
   return (
-    <div className="flex flex-row ">
+    <div className="flex flex-col md:flex-row ">
       {actionTypeArray?.map((singleAction) =>
-        <div className={`container ${singleAction.color} p-28  m-8 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-sky-700 duration-300 `}
+        <div className={`container ${singleAction.color} p-16 lg:p-28 m-2  md:m-6  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-sky-700 duration-300 `}
           onClick={() => setactionTypeAction(singleAction.actionType)}
         >
           <Link to={`/usertable`}>
